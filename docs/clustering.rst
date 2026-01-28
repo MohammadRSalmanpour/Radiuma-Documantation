@@ -39,7 +39,6 @@ Data Splitting
 * **Shuffle**: Enable shuffling to randomize the data before splitting
 * **Split**: Choose between percentage split or K-fold cross-validation
 * **Percentage**: Specify training data percentage (e.g., 80%)
-* **K-fold**: Set the number of folds for cross-validation
 * **Perform Final Test**: Option to reserve data for final testing
 
 Imputation
@@ -146,7 +145,7 @@ Transform features into a lower-dimensional space while retaining patterns:
    * **Incremental PCA**: Efficient PCA for large, streaming datasets
 
 
-* **2. Feature Selection Algorithms**
+* **2. Feature Selection Algorithm**
 
 Select the most relevant features without transformation:
 
@@ -156,9 +155,6 @@ Select the most relevant features without transformation:
 
 * **Available Methods**:
 
-   * **K-Best(ANOVA)**: Select top k features based on statistical tests 
-   * **Select Percentile**: Keep top features above a specified percentile
-   * **ReliefF**: Weight-based feature selection for multi-class problems
    * **Variance Threshold**: Remove low-variance features (user-defined threshold)
 
 
