@@ -12,7 +12,7 @@ The **Regression module** delivers a streamlined, step-by-step workflow within t
 
 The Regression tool provides a complete predictive modeling pipeline for continuous target variables with:
 
-* 6+ regression algorithms
+* 5 regression algorithms
 * Automated data preprocessing
 * Hyperparameter optimization
 * Comprehensive model evaluation
@@ -234,97 +234,29 @@ The algorithm selection interface allows you to choose and configure the appropr
 
 Supported Algorithms
 ^^^^^^^^^^^^^^^^^^^^
+**1. Bagging Regression**
 
-**1. Linear Regression**
-
-.. image:: images/15.regression_Linear.png
+.. image:: images/15.regression-Bagging.png
    :alt: Regressor Alg
    :width: 100%
 
-Standard approach estimating linear relationships between variables.
+
+Ensemble method aggregating predictions from multiple models.
 
 **Key Parameters:**
 
-* **Fit Intercept**: Whether to calculate the intercept (default: True)
-* **Positive**: Force coefficients to be positive (default: False)
-
-**2. Ridge Regression**
-
-.. image:: images/15.regression_Ridge.png
+.. image:: images/15.regression-Bagging-Estimator.png
    :alt: Regressor Alg
    :width: 100%
 
-Linear model with L2 regularization to reduce overfitting.
-
-**Key Parameters:**
-
-* **Alpha**: Regularization strength (default: 1.0)
-
-.. image:: images/15.regression_Ridge-solver.png
-   :alt: Regressor Alg
-   :width: 100%
-
-* **Solver**: Method for computation (auto, svd, cholesky, lsqr, sparse_cg, etc.)
-* **Fit Intercept**: Whether to calculate the intercept (default: True)
-* **Max Iterations**: Maximum iterations for solver (default: 500)
-* **Tolerance**: Precision of the solution (default: 0.0001)
+* **Base Estimator**: Base regressor type (DecisionTreeRegressor, SVR, etc.)
+* **Number of Estimators**: Number of base estimators (default: 10)
+* **Max Samples**: Samples per base estimator (default: 1.0)
+* **Max Features**: Features per base estimator (default: 1.0)
+* **Bootstrap**: Whether to sample with replacement (True/False)
 * **Random State**: Seed for reproducibility (default: 43)
 
-**3. Lasso Regression**
-
-.. image:: images/15.regression_Lasso.png
-   :alt: Regressor Alg
-   :width: 100%
-
-Linear model with L1 regularization promoting sparse coefficients.
-
-**Key Parameters:**
-
-* **Alpha**: Regularization strength (default: 1.0)
-* **Fit Intercept**: Whether to calculate the intercept (default: True)
-* **Max Iterations**: Maximum iterations for solver (default: 1000)
-* **Tolerance**: Precision of the solution (default: 0.0001)
-
-.. image:: images/15.regression_Lasso_selection.png
-   :alt: Regressor Alg
-   :width: 100%
-
-* **Selection**: Feature selection method (cyclic, random)
-* **Random State**: Seed for reproducibility (default: 43)
-
-**4. Logistic Regression for Regression**
-
-.. image:: images/15.regression_Regressors.png
-   :alt: Regressor Alg
-   :width: 100%
-
-Adapts logistic regression for regression tasks.
-
-**Key Parameters:**
-
-.. image:: images/15.regression_Logistic-Regression-penalty.png
-   :alt: Regressor Alg
-   :width: 100%
-
-* **Penalty**: Regularization type (L1, L2, Elasticnet, None)
-* **Regularization Strength (C)**: Inverse of regularization strength (default: 1.0)
-
-.. image:: images/15.regression_Logistic-Regression-solver.png
-   :alt: Regressor Alg
-   :width: 100%
-
-* **Solver**: Algorithm for optimization (lbfgs, liblinear, newton-cg, sag, saga)
-
-.. image:: images/15.regression_Logestic-Regression-multiclass.png
-   :alt: Regressor Alg
-   :width: 100%
-
-* **Multi-class Option**: How to handle multi-class data (auto, ovr, multinomial)
-* **Max Iterations**: Maximum iterations for solver (default: 100)
-* **L1 Ratio**: Mixing parameter for elasticnet penalty (default: 1.0)
-* **Random State**: Seed for reproducibility (default: 43)
-
-**5. AdaBoost Regression**
+**2. AdaBoost Regression**
 
 .. image:: images/15.regression_Adaboost.png
    :alt: Regressor Alg
@@ -349,27 +281,66 @@ Ensemble method using weak regressors.
 * **Loss**: Loss function (linear, square, exponential)
 * **Random State**: Seed for reproducibility (default: 43)
 
-**6. Bagging Regression**
+**3. Lasso Regression**
 
-.. image:: images/15.regression-Bagging.png
+.. image:: images/15.regression_Lasso.png
    :alt: Regressor Alg
    :width: 100%
 
-
-Ensemble method aggregating predictions from multiple models.
+Linear model with L1 regularization promoting sparse coefficients.
 
 **Key Parameters:**
 
-.. image:: images/15.regression-Bagging-Estimator.png
+* **Alpha**: Regularization strength (default: 1.0)
+* **Fit Intercept**: Whether to calculate the intercept (default: True)
+* **Max Iterations**: Maximum iterations for solver (default: 1000)
+* **Tolerance**: Precision of the solution (default: 0.0001)
+
+.. image:: images/15.regression_Lasso_selection.png
    :alt: Regressor Alg
    :width: 100%
 
-* **Base Estimator**: Base regressor type (DecisionTreeRegressor, SVR, etc.)
-* **Number of Estimators**: Number of base estimators (default: 10)
-* **Max Samples**: Samples per base estimator (default: 1.0)
-* **Max Features**: Features per base estimator (default: 1.0)
-* **Bootstrap**: Whether to sample with replacement (True/False)
+* **Selection**: Feature selection method (cyclic, random)
 * **Random State**: Seed for reproducibility (default: 43)
+
+
+**4. Ridge Regression**
+
+.. image:: images/15.regression_Ridge.png
+   :alt: Regressor Alg
+   :width: 100%
+
+Linear model with L2 regularization to reduce overfitting.
+
+**Key Parameters:**
+
+* **Alpha**: Regularization strength (default: 1.0)
+
+.. image:: images/15.regression_Ridge-solver.png
+   :alt: Regressor Alg
+   :width: 100%
+
+* **Solver**: Method for computation (auto, svd, cholesky, lsqr, sparse_cg, etc.)
+* **Fit Intercept**: Whether to calculate the intercept (default: True)
+* **Max Iterations**: Maximum iterations for solver (default: 500)
+* **Tolerance**: Precision of the solution (default: 0.0001)
+* **Random State**: Seed for reproducibility (default: 43)
+
+
+**5. Linear Regression**
+
+.. image:: images/15.regression_Linear.png
+   :alt: Regressor Alg
+   :width: 100%
+
+Standard approach estimating linear relationships between variables.
+
+**Key Parameters:**
+
+* **Fit Intercept**: Whether to calculate the intercept (default: True)
+* **Positive**: Force coefficients to be positive (default: False)
+
+
 
 Evaluation Metrics
 ^^^^^^^^^^^^^^^^^^
