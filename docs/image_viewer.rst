@@ -5,7 +5,7 @@ Image Viewer
    :alt: Image Viewer
    :width: 100%
 
-The **Image Viewer** module provides a sophisticated visualization interface within Radiuma for detailed examination, segmentation, and analysis of medical imaging data across multiple planes and dimensions. This comprehensive tool enables clinicians and researchers to navigate complex medical images through axial, sagittal, coronal, and 3D volumetric views while offering advanced functionality for image manipulation, measurement, and segmentation. With support for multiple file formats including DICOM studies, NIFTI files, and segmentation data, the viewer integrates essential tools for real-time coordinate tracking, intensity analysis, contrast adjustment, filtering, cropping, and distance measurement—all within an intuitive interface that facilitates precise anatomical localization, treatment planning, and quantitative analysis for both clinical diagnostics and research applications.
+The **Image Viewer** module provides a sophisticated visualization interface within Radiuma for detailed examination, segmentation, and analysis of medical imaging data across multiple planes and dimensions. This comprehensive tool enables clinicians and researchers to navigate complex medical images through axial, sagittal, coronal, and 3D volumetric views while offering advanced functionality for image manipulation, measurement, and segmentation. With support for multiple file formats including DICOM studies, NIFTI files, and segmentation data, the viewer integrates essential tools for real-time coordinate tracking, intensity analysis, contrast adjustment, filtering and distance measurement—all within an intuitive interface that facilitates precise anatomical localization, treatment planning, and quantitative analysis for both clinical diagnostics and research applications.
 
 View Types
 ^^^^^^^^^^
@@ -46,7 +46,6 @@ Toolbar Functions
 **Image Manipulation Tools**
 
 * **Segmentation**: Threshold-based and manual drawing tools
-* **Crop Tool**: Define regions of interest
 * **Ruler**: Precise distance measurements
 * **Rotation**: Rotate images along any axis with animation capabilities
 * **Contrast**: Window/level adjustment and brightness controls
@@ -152,14 +151,6 @@ Distance Measurement
 
 Measure precise distances between anatomical structures using the ruler tool. This functionality provides quantitative spatial information critical for diagnosis and treatment planning.
 
-Image Cropping
-"""""""""""""
-
-.. image:: images/5.image_viewer_cropping.png
-   :alt: Image Cropping
-   :width: 100%
-
-Define and extract regions of interest (ROI) to focus analysis on specific areas. Cropping helps reduce computational load and increase precision by limiting operations to relevant image portions.
 
 Segmentation Tools
 """""""""""""""""
