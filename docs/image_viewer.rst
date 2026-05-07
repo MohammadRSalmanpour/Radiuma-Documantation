@@ -97,7 +97,7 @@ Image Overlay
 
 Combine multiple images using overlay techniques with adjustable transparency levels. This functionality is valuable for comparing different imaging modalities or pre/post-treatment images.
 
-Breeding
+Breeding (Coming Soon)
 """"""""""""
 
 .. image:: images/5.image_viewer_breeding.png
