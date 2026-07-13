@@ -47,6 +47,8 @@ To convert images:
 
 This simple two-step process allows for easy conversion of medical images between supported formats without specialized knowledge of file formats or conversion tools.
 
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Image Conversion for Medical Images | Radiuma Tutorial <https://www.youtube.com/watch?v=jbM2fZXqfag>`_
+
 RT Struct Processing
 --------------------
 
