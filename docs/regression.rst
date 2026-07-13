@@ -410,3 +410,5 @@ The Regression tool guides you through a complete workflow:
 * **Performance Metrics**: Calculate accuracy metrics on test data
 * **Residual Analysis**: Analyze prediction errors and identify patterns
 * **Feature Importance**: Evaluate contribution of each feature
+
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Regression | Predictive Modeling Workflow with Radiuma | Radiuma Tutorial <https://www.youtube.com/watch?v=EYz5Ljc0Y48>`_
