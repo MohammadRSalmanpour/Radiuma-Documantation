@@ -205,3 +205,7 @@ Volume Mask Toggle
    :width: 100%
 
 Toggle in the 3D view that switches between volume mode and mask mode. Volume mode displays both the image and segmentations together, while mask mode shows only the segmentations, allowing for clearer visualization of the segmented structures.
+
+
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Image Viewer | Medical Image Visualization with Radiuma | Radiuma Tutorial <https://www.youtube.com/watch?v=1OuzVu6V8jc>`_
+
