@@ -343,3 +343,6 @@ The Clustering tool guides you through a complete workflow:
 * **Visualization**: Plot clusters in 2D/3D space
 * **Validation**: Assess cluster quality using internal and stability metrics
 * **Interpretation**: Analyze cluster characteristics and distributions
+
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Radiomics-Based Clustering | Unsupervised Learning with Radiuma | Radiuma Tutorial <https://www.youtube.com/watch?v=2N45Lk8rCSs>`_
+
