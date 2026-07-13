@@ -479,3 +479,6 @@ The Classification module guides you through a complete machine learning pipelin
 * **Feature Optimization** – Dimension reduction and selection  
 * **Modeling** – Choose and tune classifiers  
 * **Evaluation & Comparison** – Select the optimal algorithm
+
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Radiomics and Classification with Radiuma | Radiuma Tutorial <https://www.youtube.com/watch?v=iL8Y1pbNx20>`_
+
