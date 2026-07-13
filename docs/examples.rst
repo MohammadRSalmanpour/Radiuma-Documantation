@@ -174,6 +174,8 @@ The image after filtering is:
 
 This workflow enables precise control over image enhancement techniques while maintaining compatibility with downstream analysis tools.
 
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Image Filtering for Medical Images | Radiuma Tutorial <https://www.youtube.com/watch?v=rskVapEkSKo>`_
+
 Image Fusion
 ------------
 
@@ -247,6 +249,8 @@ To fuse medical images:
    :width: 600px
 
 This workflow allows you to combine complementary information from different imaging sources into a single comprehensive visualization for improved analysis and interpretation.
+
+
 
 Image Registration for AutoPET
 ------------------------------
@@ -471,6 +475,8 @@ To implement this PET/CT registration and filtering pipeline:
 5. Add an Image Filter tool and connect:
    * Registration tool output → Filter input 
 
+**Video Tutorial**: Watch the step-by-step guide on YouTube: `Medical Image Registration and Fusion | Multimodal Medical Imaging with Radiuma <https://www.youtube.com/watch?v=_nbDuGCJMns>`_
+
 Reading a DICOM Series
 ----------------------
 
@@ -584,6 +590,8 @@ To implement this radiomics and classification pipeline:
 6. Run the workflow to extract features, train the classifier, and save results
 
 This workflow enables quantitative image analysis for applications such as tumor classification, treatment response prediction, and outcome prognostication based on imaging biomarkers.
+
+
 
 Multi-Registration Regression Analysis
 --------------------------------------
