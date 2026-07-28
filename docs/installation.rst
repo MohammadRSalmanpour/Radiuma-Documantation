@@ -19,4 +19,4 @@ Linux
 -----
 For a complete walkthrough of the installation process on Linux, watch the official video guide:
 
-`Watch Radiuma Installation on Linux <https://www.youtube.com/watch?v=hdUaTkaxPCI>`_
+`Watch Radiuma Installation on Linux <https://www.youtube.com/watch?v=MbCU_RKonRM>`_
